@@ -12,7 +12,7 @@ window.addEventListener("load", onLoad);
 
 function onLoad() {
   addLi();
-  console.log();
+ 
 
   const span = document.querySelector(".selected");
   getPadre = span.parentNode;
@@ -52,15 +52,15 @@ function addLi() {
   var listNode = document.getElementById("list2"),
   
   var button1 = document.createElement("Button");
-      button1.innerHTML = "Texto ejemplo1";
+      button1.innerHTML = "Texto ejemplo 1";
       button1.classList.add("element-1");
 
   var button3 = document.createElement("Button");
-      button3.innerHTML = "Texto ejemplo3";
+      button3.innerHTML = "Texto ejemplo 3";
       button3.classList.add("element-3");
 
   var button5 = document.createElement("Button");
-      button5.innerHTML = "Texto ejemplo5";
+      button5.innerHTML = "Texto ejemplo 5";
       button5.classList.add("element-5");
       button5.disabled=true;
 
