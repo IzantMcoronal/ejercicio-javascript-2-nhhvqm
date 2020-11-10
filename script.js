@@ -42,10 +42,13 @@ function deleteImp(){
 
 function addLi() {
 
+  //Seleccionamos el elemento "List2" por su Id
   var listNode = document.getElementById("list2"),
-  
+  //Creamos el boton
   var button1 = document.createElement("Button");
+      //le agregamos el texto del boton
       button1.innerHTML = "Texto ejemplo 1";
+      //le agregamos la clase al boton
       button1.classList.add("element-1");
 
   var button3 = document.createElement("Button");
@@ -56,8 +59,9 @@ function addLi() {
       button5.innerHTML = "Texto ejemplo 5";
       button5.classList.add("element-5");
       button5.disabled=true;
-
+  //creamos la Lista
   var li1 = document.createElement("LI");
+      //agregamos a la lista un hijo que sera el boton
       li1.appendChild(button1);
 
   var li3 = document.createElement("li");
@@ -65,8 +69,9 @@ function addLi() {
 
   var li5 = document.createElement("Li");
       li5.appendChild(button5);
+      //Con este comando desactivamos el boton 5.
       button5.disabled;
-
+  //agregamos la lista con el boton a "lista2"
   listNode.appendChild(li1);
   listNode.appendChild(li3);
   listNode.appendChild(li5);
