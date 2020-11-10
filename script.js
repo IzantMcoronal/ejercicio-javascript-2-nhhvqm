@@ -14,10 +14,6 @@ function onLoad() {
   getAll();
   borrarImp();
   addLi();
- 
-
-  
-  
 }
 
 function getAll (){
