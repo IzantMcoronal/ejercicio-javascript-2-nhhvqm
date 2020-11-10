@@ -34,8 +34,9 @@ function getAll (){
 }
 
 function deleteImp(){
-
+  //Creamos una variable donde metemos todos los Li
   var deleteList = document.querySelectorAll("Li");
+  //Borramos los li seleccionados que son los li pares 2 y 4
   deleteList[1].remove();
   deleteList[3].remove();
 }
