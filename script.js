@@ -11,6 +11,7 @@
 window.addEventListener('load', onLoad);
 
 function onLoad() {
+  
   const span = document.querySelector('.selected');
   getPadre = span.parentNode;
   getPadrepadre=getPadre.previousSibling;
@@ -19,4 +20,10 @@ function onLoad() {
   getPadrepadrepadrepadrepadre = getPadrepadrepadrepadre.previousSibling;
   console.log(getPadrepadrepadrepadrepadre)
   
+
+  const span2 = document.querySelector('.selected');
+  getPadre = span2.parentNode;
+  getPadrepadre=getPadre.previousSibling;
+  getPadrepadrepadre = getPadrepadre.previousSibling;
+  console.log(getPadrepadrepadre)
 }
