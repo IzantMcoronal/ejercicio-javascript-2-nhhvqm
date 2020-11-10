@@ -9,10 +9,11 @@
 //    * Después de generar esta segunda lista, añadid el atributo disabled al último botón.
 // Suerte!
 
-window.addEventListener("load", onLoad);
+window.addEventListener('load', onLoad);
 
 function onLoad() {
-  console.log("hi");
+  console.log('hi');
 
-  const 
+  const span = document.querySelector('.selected');
+  console.log(span);
 }
