@@ -18,7 +18,7 @@ function onLoad() {
   getPadrepadrepadre = getPadrepadre.previousSibling;
   getPadrepadrepadrepadre = getPadrepadrepadre.previousSibling;
   getPadrepadrepadrepadrepadre = getPadrepadrepadrepadre.previousSibling;
-  console.log(getPadrepadrepadrepadrepadre)
+  console.log(getPadrepadrepadrepadrepadre) 
   
 
   const span2 = document.querySelector('.selected');
