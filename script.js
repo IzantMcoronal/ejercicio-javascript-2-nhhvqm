@@ -10,12 +10,14 @@
 
 window.addEventListener("load", onLoad);
 
+//Main
 function onLoad() {
   getAll();
   deleteImp();
   addLi();
 }
 
+//Funcion que obtiene todos los Li
 function getAll (){
   
   //Creamos la variable indicador para situarnos en el Li de la lista
@@ -41,6 +43,7 @@ function getAll (){
   }
 }
 
+//Funcion que borra los Li
 function deleteImp(){
   
   //Creamos una variable donde metemos todos los Li
@@ -51,6 +54,7 @@ function deleteImp(){
   deleteList[3].remove();
 }
 
+//Funcion que añade los Li
 function addLi() {
 
   //Seleccionamos el elemento "List2" por su Id
