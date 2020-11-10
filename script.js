@@ -12,7 +12,7 @@ window.addEventListener("load", onLoad);
 
 function onLoad() {
   getAll();
-  borrarImp();
+  deleteImp();
   addLi();
 }
 
@@ -33,11 +33,11 @@ function getAll (){
   }
 }
 
-function borrarImp(){
+function deleteImp(){
 
-  var borrarList = document.querySelectorAll("Li");
-  borrarList[1].remove();
-  borrarList[3].remove();
+  var deleteList = document.querySelectorAll("Li");
+  deleteList[1].remove();
+  deleteList[3].remove();
 }
 
 function addLi() {
