@@ -15,6 +15,8 @@ function onLoad() {
   getPadre = span.parentNode;
   getPadrepadre=getPadre.previousSibling;
   getPadrepadrepadre = getPadrepadre.previousSibling;
-  console.log(getPadrepadrepadre)
+  getPadrepadrepadrepadre = getPadrepadrepadre.previousSibling;
+  getPadrepadrepadrepadrepadre = getPadrepadrepadrepadre.previousSibling;
+  console.log(getPadrepadrepadrepadrepadre)
   
 }
