@@ -51,26 +51,28 @@ function addLi() {
 
   var listNode = document.getElementById("list2"),
   
-  var button1 = document.createElement("BUTTON");
+  var button1 = document.createElement("Button");
       button1.innerHTML = "Texto ejemplo1";
       button1.classList.add("element-1");
 
-  var button3 = document.createElement("BUTTON");
+  var button3 = document.createElement("Button");
       button3.innerHTML = "Texto ejemplo3";
       button3.classList.add("element-3");
 
-  var button5 = document.createElement("BUTTON");
+  var button5 = document.createElement("Button");
       button5.innerHTML = "Texto ejemplo5";
       button5.classList.add("element-5");
+      button5.disabled=true;
 
-  var li1 = document.createElement("Li");
+  var li1 = document.createElement("LI");
       li1.appendChild(button1);
 
-  var li3 = document.createElement("Li");
+  var li3 = document.createElement("li");
       li3.appendChild(button3);
 
   var li5 = document.createElement("Li");
       li5.appendChild(button5);
+      button5.disabled;
 
   listNode.appendChild(li1);
   listNode.appendChild(li3);
