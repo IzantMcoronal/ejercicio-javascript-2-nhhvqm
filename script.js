@@ -26,4 +26,22 @@ function onLoad() {
   getPadrepadre=getPadre.previousSibling;
   getPadrepadrepadre = getPadrepadre.previousSibling;
   console.log(getPadrepadrepadre)
+
+  const span3 = document.querySelector('.selected');
+  getPadre = span3.parentNode;
+  console.log(getPadre)
+
+  const span4 = document.querySelector('.selected');
+  getPadre = span4.parentNode;
+  getPadrehijo=getPadre.nextSibling;
+  getPadrehijohijo = getPadrehijo.nextSibling;
+  console.log(getPadrehijohijo)
+
+  const span5 = document.querySelector('.selected');
+  getPadre = span.parentNode;
+  getPadrehijo=getPadre.nextSibling;
+  getPadrehijohijo = getPadrehijo.nextSibling;
+  getPadrehijohijohijo = getPadrehijohijo.nextSibling;
+  getPadrehijohijohijohijo = getPadrehijohijohijo.nextSibling;
+  console.log(getPadrehijohijohijohijo)
 }
