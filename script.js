@@ -11,40 +11,37 @@
 window.addEventListener("load", onLoad);
 
 function onLoad() {
+  getAll();
+  borrarImp();
   addLi();
  
 
-  const span = document.querySelector(".selected");
-  getPadre = span.parentNode;
-  getPadrepadre = getPadre.previousSibling;
-  getPadrepadrepadre = getPadrepadre.previousSibling;
-  getPadrepadrepadrepadre = getPadrepadrepadre.previousSibling;
-  getPadrepadrepadrepadrepadre = getPadrepadrepadrepadre.previousSibling;
-  console.log(getPadrepadrepadrepadrepadre);
+  
+  
+}
 
-  const span2 = document.querySelector(".selected");
-  getPadre = span2.parentNode;
-  getPadrepadre = getPadre.previousSibling;
-  getPadrepadrepadre = getPadrepadre.previousSibling;
-  console.log(getPadrepadrepadre);
+function getAll (){
+  let indicador = document.querySelector(".selected").parentElement.parentElement.childNodes;
 
-  const span3 = document.querySelector(".selected");
-  getPadre = span3.parentNode;
-  console.log(getPadre);
+  let contador = 1;
 
-  const span4 = document.querySelector(".selected");
-  getPadre = span4.parentNode;
-  getPadrehijo = getPadre.nextSibling;
-  getPadrehijohijo = getPadrehijo.nextSibling;
-  console.log(getPadrehijohijo);
+  for (var i = 0; i < indicador.length; i++){
+    if( indicador [i] instanceof HTMLElement){
 
-  const span5 = document.querySelector(".selected");
-  getPadre = span.parentNode;
-  getPadrehijo = getPadre.nextSibling;
-  getPadrehijohijo = getPadrehijo.nextSibling;
-  getPadrehijohijohijo = getPadrehijohijo.nextSibling;
-  getPadrehijohijohijohijo = getPadrehijohijohijo.nextSibling;
-  console.log(getPadrehijohijohijohijo);
+      var li = indicador[i].children;
+
+      li[0].classList.add("element-" + contador);
+      contador++;
+
+    }
+  }
+}
+
+function borrarImp(){
+
+  var borrarList = document.querySelectorAll("Li");
+  borrarList[1].remove();
+  borrarList[3].remove();
 }
 
 function addLi() {
