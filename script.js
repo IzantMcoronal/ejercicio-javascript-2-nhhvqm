@@ -8,40 +8,73 @@
 //    * Después de generar esta segunda lista, añadid el atributo disabled al último botón.
 // Suerte!
 
-window.addEventListener('load', onLoad);
+window.addEventListener("load", onLoad);
 
 function onLoad() {
-  
-  const span = document.querySelector('.selected');
+  addLi();
+  console.log();
+
+  const span = document.querySelector(".selected");
   getPadre = span.parentNode;
-  getPadrepadre=getPadre.previousSibling;
+  getPadrepadre = getPadre.previousSibling;
   getPadrepadrepadre = getPadrepadre.previousSibling;
   getPadrepadrepadrepadre = getPadrepadrepadre.previousSibling;
   getPadrepadrepadrepadrepadre = getPadrepadrepadrepadre.previousSibling;
-  console.log(getPadrepadrepadrepadrepadre) 
-  
+  console.log(getPadrepadrepadrepadrepadre);
 
-  const span2 = document.querySelector('.selected');
+  const span2 = document.querySelector(".selected");
   getPadre = span2.parentNode;
-  getPadrepadre=getPadre.previousSibling;
+  getPadrepadre = getPadre.previousSibling;
   getPadrepadrepadre = getPadrepadre.previousSibling;
-  console.log(getPadrepadrepadre)
+  console.log(getPadrepadrepadre);
 
-  const span3 = document.querySelector('.selected');
+  const span3 = document.querySelector(".selected");
   getPadre = span3.parentNode;
-  console.log(getPadre)
+  console.log(getPadre);
 
-  const span4 = document.querySelector('.selected');
+  const span4 = document.querySelector(".selected");
   getPadre = span4.parentNode;
-  getPadrehijo=getPadre.nextSibling;
+  getPadrehijo = getPadre.nextSibling;
   getPadrehijohijo = getPadrehijo.nextSibling;
-  console.log(getPadrehijohijo)
+  console.log(getPadrehijohijo);
 
-  const span5 = document.querySelector('.selected');
+  const span5 = document.querySelector(".selected");
   getPadre = span.parentNode;
-  getPadrehijo=getPadre.nextSibling;
+  getPadrehijo = getPadre.nextSibling;
   getPadrehijohijo = getPadrehijo.nextSibling;
   getPadrehijohijohijo = getPadrehijohijo.nextSibling;
   getPadrehijohijohijohijo = getPadrehijohijohijo.nextSibling;
-  console.log(getPadrehijohijohijohijo)
+  console.log(getPadrehijohijohijohijo);
+}
+
+function addLi() {
+
+  var listNode = document.getElementById("list2"),
+  
+  var button1 = document.createElement("BUTTON");
+      button1.innerHTML = "Texto ejemplo1";
+      button1.classList.add("element-1");
+
+  var button3 = document.createElement("BUTTON");
+      button3.innerHTML = "Texto ejemplo3";
+      button3.classList.add("element-3");
+
+  var button5 = document.createElement("BUTTON");
+      button5.innerHTML = "Texto ejemplo5";
+      button5.classList.add("element-5");
+
+  var li1 = document.createElement("Li");
+      li1.appendChild(button1);
+
+  var li3 = document.createElement("Li");
+      li3.appendChild(button3);
+
+  var li5 = document.createElement("Li");
+      li5.appendChild(button5);
+
+  listNode.appendChild(li1);
+  listNode.appendChild(li3);
+  listNode.appendChild(li5);
+
+
 }
