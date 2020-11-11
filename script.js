@@ -29,7 +29,7 @@ function getAll (){
   //Realizamos un for de los Li almacenados en indicador
   for (var i = 0; i < indicador.length; i++){
     
-    //Si al recorrer los Li encuentra un elementoHTML lo guarda
+    //Si al recorrer los Li encuentra el elementoHTML lo guarda
     if( indicador [i] instanceof HTMLElement){
       
       //creamos la variable Li que nos lleva a los hijos span
